@@ -6,20 +6,20 @@
 // @author       You
 // @match        https://www.youtube.com/watch*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
-// @grant        none
+// @grant        GM_addStyle
 // ==/UserScript==
 
 (function() {
-    'use strict';
+  'use strict';
 
-    // Your code here...
-    let css=`
-      .caption-window{
-        -moz-user-select: text !important;;
-        -ms-user-select: text !important;
-        -webkit-user-select: text !important;
-        cursor:text !important;
-      }
-    `
-    GM_addStyle(css)
+  // Your code here...
+  let css=`
+  .caption-window{
+   -moz-user-select: text !important;
+   -ms-user-select: text !important;
+   -webkit-user-select: text !important;
+   cursor:text !important;
+  }
+  `
+  GM_addStyle(css)
 })();
